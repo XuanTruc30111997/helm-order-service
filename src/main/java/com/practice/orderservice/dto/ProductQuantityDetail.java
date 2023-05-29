@@ -1,0 +1,16 @@
+package com.practice.orderservice.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@SuperBuilder
+public class ProductQuantityDetail {
+    private String productId;
+    private int quantity;
+    private float price;
+}

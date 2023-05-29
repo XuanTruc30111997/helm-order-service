@@ -1,0 +1,14 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /order
+
+spring:
+  application:
+    name: order-service
+  profile:
+    active: local
+
+  endpoints:
+    invoiceHost: "http://localhost:8082/invoice"
+    catalogHost: "http://localhost:8081/catalog"

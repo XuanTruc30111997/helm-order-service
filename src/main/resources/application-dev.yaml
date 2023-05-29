@@ -1,0 +1,4 @@
+spring:
+  endpoints:
+    invoiceHost: "http://invoice-service:8082/invoice"
+    catalogHost: "http://catalog-service:8081/catalog"
