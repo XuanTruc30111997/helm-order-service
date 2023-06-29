@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catalog-service
+  namespace: practice-helm
+data:
+  application.yaml: |
+    spring:
+      endpoints:
+        invoiceHost: "http://invoice-service:8082/invoice"
+        catalogHost: "http://catalog-service:8081/catalog"
